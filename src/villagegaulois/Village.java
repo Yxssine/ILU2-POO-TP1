@@ -13,6 +13,21 @@ public class Village {
 		this.nom = nom;
 		villageois = new Gaulois[nbVillageoisMaximum];
 	}
+	
+	  private static class Marche {
+		   private Etal[]etals;
+			
+			public Marche (int taille) {
+				etals = new Etal[taille];
+				for ( int i = 0; i < taille;  i++)
+					etals[i]= new Etal();
+					
+				}
+			public Etal[] getEtals() {
+				return etals;
+			}
+	 	}
+		
 
 	public String getNom() {
 		return nom;
